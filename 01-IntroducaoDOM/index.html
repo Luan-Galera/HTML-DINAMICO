@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Introdução DOM</title>
+</head>
+<body style="background-color: pink; text-align: center;">
+    <h1>Introdução ao DOM</h1>
+    <p id="meuTexto">Texto original.</p>
+    <button onclick="mudarTexto()">Trocar texto!</button>
+    <button onclick="adicionarTexto()">Adicionar Texto!</button>
+    <button onclick="apagarTexto()">Apagar Texto!</button>
+
+    <script>
+        const mudarTexto = () => {
+            document.getElementById("meuTexto").innerHTML = "Texto alterado!";
+        };
+        const adicionarTexto = () => {
+            document.getElementById("meuTexto").innerHTML += " | Texto adicionado!";
+        };
+        const apagarTexto = () => {
+            document.getElementById("meuTexto").innerHTML = "";
+        };
+    </script>
+</body>
+</html>
